@@ -1,0 +1,205 @@
+:root {
+  --basic-background-color: #ffffff;
+  --brand-background-color: #2f303a;
+  --section-background-color: #e5e5e5;
+  --section-background-color-comand: #f5f4fa;
+  --text-color-accent: #2196f3;
+  --text-color-primary: #212121;
+  --text-color-secondary: #757575;
+  --color-logo: #000000;
+  --section-background-menu: #eeeeee;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color-primary);
+}
+
+body ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* header */
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts a {
+  color: var(--text-color-secondary);
+}
+
+.link {
+  color: var(--text-color-primary);
+}
+
+.link.active {
+  color: var(--text-color-accent);
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-logo);
+}
+
+.logo-decoration {
+  color: var(--text-color-accent);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--text-color-accent);
+}
+
+/* hero */
+.hero {
+  background-color: var(--brand-background-color);
+}
+
+.title.hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--basic-background-color);
+}
+
+.hero button {
+  width: 200;
+  height: 50;
+  background-color: var(--text-color-accent);
+  color: var(--basic-background-color);
+  border: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* benefits */
+.benefits .title,
+.menu .title {
+  display: none;
+}
+
+.header,
+.benefits,
+.our-work,
+.menu {
+  background-color: var(--header-background-color);
+}
+.benefits .sub-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.benefits .text {
+  color: var(--text-color-secondary);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* comand */
+.comand {
+  background-color: var(--section-background-color-comand);
+}
+.worker-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.job-title {
+  color: var(--text-color-secondary);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* menu portfolio */
+.menu-list button {
+  background-color: var(--section-background-color-comand);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  border: 0;
+  cursor: pointer;
+}
+
+.menu-list{
+  
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-type {
+  color: var(--text-color-secondary);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.menu-list button:hover,
+.menu-list button:focus {
+  background-color: var(--text-color-accent);
+  color: var(--basic-background-color);
+}
+
+/* footer */
+.footer {
+  background-color: var(--brand-background-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer .logo {
+  color: var(--basic-background-color);
+}
+
+.address-list .link {
+  color: var(--text-color-secondary);
+  font-style: normal;
+}
+
+.address-list .link.address {
+  color: var(--basic-background-color);
+}
