@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --basic-background-color: #ffffff;
   --brand-background-color: #2f303a;
@@ -10,8 +16,19 @@
   --section-background-menu: #eeeeee;
 }
 
+h1,
+h2,
+h4,
+button,
+a,
+img,
+p {
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--text-color-primary);
 }
 
@@ -19,6 +36,16 @@ body ul,
 a {
   list-style: none;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* header */
@@ -38,11 +65,11 @@ a {
 }
 
 .link.active {
-  color: var(--text-color-accent);
+  border-bottom: 2px solid var(--text-color-accent);
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -72,11 +99,15 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--basic-background-color);
+  padding-bottom: 30px;
+}
+
+.hero .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero button {
-  width: 200;
-  height: 50;
   background-color: var(--text-color-accent);
   color: var(--basic-background-color);
   border: 0;
@@ -84,11 +115,16 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title {
@@ -159,8 +195,7 @@ a {
   cursor: pointer;
 }
 
-.menu-list{
-  
+.menu-list {
 }
 
 .project-name {
