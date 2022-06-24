@@ -31,6 +31,11 @@ a {
   text-decoration: none;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -162,8 +167,7 @@ a {
 
 /* benefits */
 .benefits .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+
   margin: 0 auto;
 }
 
@@ -208,8 +212,8 @@ a {
   letter-spacing: 0.03em;
 }
 
-.our-work .container {
-  padding-bottom: 94px;
+.section.our-work {
+  padding-top: 0;
 }
 
 .our-work .title {
@@ -227,8 +231,7 @@ a {
 }
 
 .comand .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+
 }
 
 .comand .title {
@@ -292,8 +295,7 @@ a {
 }
 
 .menu .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+
 }
 
 .menu .menu-list {
@@ -315,10 +317,15 @@ a {
 .portfolio-list .item {
   border: 1px solid var(--header-border-color);
   width: 370px;
+  padding-bottom: 20px;
 }
 
 .portfolio-list .item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
+}
+
+.portfolio-list img {
+  margin-bottom: 20px;
 }
 
 .project-name {
@@ -326,6 +333,8 @@ a {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  padding-left: 24px;
 }
 
 .project-type {
@@ -333,6 +342,7 @@ a {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  padding-left: 24px;
 }
 
 .menu-list button:hover,
