@@ -34,13 +34,13 @@ a {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  /* outline: 1px solid red; */
 }
 
 .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  /* outline: 1px solid red; */
 }
 
 /* header */
@@ -54,10 +54,14 @@ a {
 
 .contacts-list .link {
   color: var(--text-color-secondary);
+  display: block;
+  padding: 32px 0;
 }
 
 .nav-list .link {
   color: var(--text-color-primary);
+  display: block;
+  padding: 32px 0;
 }
 
 .link.active {
@@ -90,11 +94,7 @@ a {
 
 .nav {
   display: flex;
-}
-
-.header a {
-  display: block;
-  padding: 32px 0;
+  align-items: center;
 }
 
 .nav-list,
