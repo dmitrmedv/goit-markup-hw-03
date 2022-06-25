@@ -52,14 +52,12 @@ a {
   border-bottom: 1px solid var(--header-border-color);
 }
 
-.contacts .link {
+.contacts-list .link {
   color: var(--text-color-secondary);
-  padding: 32px 0;
 }
 
 .nav-list .link {
   color: var(--text-color-primary);
-  padding: 32px 0;
 }
 
 .link.active {
@@ -87,7 +85,6 @@ a {
 
 .header .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -95,23 +92,28 @@ a {
   display: flex;
 }
 
+.header a {
+  display: block;
+  padding: 32px 0;
+}
+
 .nav-list,
-.contacts {
+.contacts-list {
   display: flex;
   align-items: center;
 }
 
-.contacts {
-  margin: 32px 0;
+.contacts-list {
+  margin-left: auto;
 }
 
 .nav-list .item,
-.contacts .item {
+.contacts-list .item {
   margin-right: 50px;
 }
 
 .nav-list .item:last-child,
-.contacts .item:last-child {
+.contacts-list .item:last-child {
   margin-right: 0;
 }
 
@@ -122,10 +124,7 @@ a {
 }
 
 .hero .container {
-  padding-top: 200px;
-  padding-left: 237px;
-  padding-right: 237px;
-  padding-bottom: 200px;
+  padding: 200px 0;
 }
 
 .title.hero {
@@ -136,6 +135,9 @@ a {
   text-transform: uppercase;
   color: var(--basic-background-color);
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
 }
 
 .hero button {
@@ -215,6 +217,11 @@ a {
   padding-top: 0;
 }
 
+.our-work img {
+  display: block;
+  max-height: auto;
+}
+
 .our-work .title {
   margin-bottom: 50px;
 }
@@ -229,11 +236,8 @@ a {
   background-color: var(--section-background-color-comand);
 }
 
-.comand .container {
-}
-
 .comand .title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .comand .title-list {
@@ -243,15 +247,15 @@ a {
 
 .photo-worker {
   display: block;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .worker-name {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .job-title {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .comand .item {
@@ -308,11 +312,6 @@ a {
   justify-content: space-between;
 }
 
-/* .portfolio-list .item {
-  width: 370px;
-  padding-bottom: 20px;
-} */
-
 .portfolio-list .item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
@@ -334,7 +333,6 @@ a {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-  /* padding-left: 24px; */
 }
 
 .project-type {
@@ -342,7 +340,6 @@ a {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  /* padding-left: 24px; */
 }
 
 .menu-list button:hover,
@@ -361,7 +358,7 @@ a {
   letter-spacing: 0.03em;
 }
 
-.footer .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
